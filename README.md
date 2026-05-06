@@ -73,7 +73,6 @@ Requires MinGW (`x86_64-w64-mingw32-gcc`) for the loaders and `gcc` for the encr
 ```bash
 make        # builds loader.exe and message.exe
 make enc    # builds the encryptor (native, no MinGW needed)
-make clean
 ```
 
 ---
