@@ -59,7 +59,7 @@ At runtime:
 | File | Purpose |
 |------|---------|
 | `loader.c` | Main loader — decrypt and execute the embedded shellcode |
-| `message.c` | Alternate loader variant with a different encrypted payload |
+| `message.c` | Alternate loader variant with a different encrypted payload, shellcode for a popup window, created with "msfvenom -p windows/x64/messagebox TEXT="pwned" TITLE="noob" -f c" |
 | `enc.c` | Offline encryption utility — XORs raw shellcode to produce the blob |
 | `obf.c` | `XOR_maker()` and `trusted_machine()` — key derivation and demo string decode |
 | `obf.h` | Header for `obf.c` |
